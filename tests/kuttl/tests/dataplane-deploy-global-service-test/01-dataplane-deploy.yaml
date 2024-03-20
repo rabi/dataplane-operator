@@ -2,7 +2,7 @@
 apiVersion: dataplane.openstack.org/v1beta1
 kind: OpenStackDataPlaneDeployment
 metadata:
-  name: edpm-compute-global
+  name: edpm-compute-global-deployment
 spec:
   nodeSets:
     - edpm-compute-global

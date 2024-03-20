@@ -123,15 +123,15 @@ status:
       severity: Error
       status: "False"
       type: NodeSetDeploymentReady
-    edpm-compute-no-nodes-ovrd:
+    edpm-compute-no-nodes-override:
     - message: Deployment completed
       reason: Ready
       status: "True"
       type: NodeSetDeploymentReady
-    - message: custom-svc Deployment ready
+    - message: custom-service Deployment ready
       reason: Ready
       status: "True"
-      type: ServiceCustomSvcDeploymentReady
+      type: ServiceCustomServiceDeploymentReady
     edpm-compute-no-nodes-updated-ovn-cm:
     - message: Deployment completed
       reason: Ready

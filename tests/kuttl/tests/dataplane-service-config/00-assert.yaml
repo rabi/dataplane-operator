@@ -2,14 +2,14 @@
 apiVersion: ansibleee.openstack.org/v1beta1
 kind: OpenStackAnsibleEE
 metadata:
-  name: kuttl-service-edpm-compute-no-nodes-edpm-compute-no-nodes
+  name: kuttl-service-edpm-compute-no-nodes-service-config-deployment-edpm-compute-no-nodes-service-config
   namespace: openstack
   ownerReferences:
   - apiVersion: dataplane.openstack.org/v1beta1
     blockOwnerDeletion: true
     controller: true
     kind: OpenStackDataPlaneDeployment
-    name: edpm-compute-no-nodes
+    name: edpm-compute-no-nodes-service-config-deployment
 spec:
   env:
     - name: ANSIBLE_FORCE_COLOR
@@ -91,7 +91,7 @@ spec:
         items:
         - key: inventory
           path: inventory
-        secretName: dataplanenodeset-edpm-compute-no-nodes
+        secretName: dataplanenodeset-edpm-compute-no-nodes-service-config
   name: openstackansibleee
   play: |
     - hosts: localhost

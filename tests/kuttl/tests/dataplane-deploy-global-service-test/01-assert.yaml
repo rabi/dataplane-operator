@@ -54,14 +54,14 @@ apiVersion: ansibleee.openstack.org/v1beta1
 kind: OpenStackAnsibleEE
 metadata:
   generation: 1
-  name: custom-global-service-edpm-compute-global
+  name: custom-global-service-edpm-compute-global-deployment
   namespace: openstack
   ownerReferences:
   - apiVersion: dataplane.openstack.org/v1beta1
     blockOwnerDeletion: true
     controller: true
     kind: OpenStackDataPlaneDeployment
-    name: edpm-compute-global
+    name: edpm-compute-global-deployment
 spec:
   backoffLimit: 6
   env:
@@ -118,14 +118,14 @@ status:
 apiVersion: ansibleee.openstack.org/v1beta1
 kind: OpenStackAnsibleEE
 metadata:
-  name: download-cache-edpm-compute-global-edpm-compute-global
+  name: download-cache-edpm-compute-global-deployment-edpm-compute-global
   namespace: openstack
   ownerReferences:
   - apiVersion: dataplane.openstack.org/v1beta1
     blockOwnerDeletion: true
     controller: true
     kind: OpenStackDataPlaneDeployment
-    name: edpm-compute-global
+    name: edpm-compute-global-deployment
 spec:
   backoffLimit: 6
   extraMounts:
@@ -168,7 +168,7 @@ status:
 apiVersion: ansibleee.openstack.org/v1beta1
 kind: OpenStackAnsibleEE
 metadata:
-  name: bootstrap-edpm-compute-global-edpm-compute-global
+  name: bootstrap-edpm-compute-global-deployment-edpm-compute-global
   namespace: openstack
   ownerReferences:
   - apiVersion: dataplane.openstack.org/v1beta1
@@ -219,7 +219,7 @@ status:
 apiVersion: ansibleee.openstack.org/v1beta1
 kind: OpenStackAnsibleEE
 metadata:
-  name: configure-network-edpm-compute-global-edpm-compute-global
+  name: configure-network-edpm-compute-global-deployment-edpm-compute-global
   namespace: openstack
   ownerReferences:
   - apiVersion: dataplane.openstack.org/v1beta1
@@ -269,14 +269,14 @@ status:
 apiVersion: ansibleee.openstack.org/v1beta1
 kind: OpenStackAnsibleEE
 metadata:
-  name: validate-network-edpm-compute-global-edpm-compute-global
+  name: validate-network-edpm-compute-global-deployment-edpm-compute-global
   namespace: openstack
   ownerReferences:
   - apiVersion: dataplane.openstack.org/v1beta1
     blockOwnerDeletion: true
     controller: true
     kind: OpenStackDataPlaneDeployment
-    name: edpm-compute-global
+    name: edpm-compute-global-deployment
 spec:
   backoffLimit: 6
   extraMounts:
@@ -319,14 +319,14 @@ status:
 apiVersion: ansibleee.openstack.org/v1beta1
 kind: OpenStackAnsibleEE
 metadata:
-  name: install-os-edpm-compute-global-edpm-compute-global
+  name: install-os-edpm-compute-global-deployment-edpm-compute-global
   namespace: openstack
   ownerReferences:
   - apiVersion: dataplane.openstack.org/v1beta1
     blockOwnerDeletion: true
     controller: true
     kind: OpenStackDataPlaneDeployment
-    name: edpm-compute-global
+    name: edpm-compute-global-deployment
 spec:
   backoffLimit: 6
   extraMounts:
@@ -370,7 +370,7 @@ apiVersion: ansibleee.openstack.org/v1beta1
 kind: OpenStackAnsibleEE
 metadata:
   generation: 1
-  name: configure-os-edpm-compute-global-edpm-compute-global
+  name: configure-os-edpm-compute-global-deployment-edpm-compute-global
   namespace: openstack
   ownerReferences:
   - apiVersion: dataplane.openstack.org/v1beta1
@@ -420,14 +420,14 @@ status:
 apiVersion: ansibleee.openstack.org/v1beta1
 kind: OpenStackAnsibleEE
 metadata:
-  name: run-os-edpm-compute-global-edpm-compute-global
+  name: run-os-edpm-compute-global-deployment-edpm-compute-global
   namespace: openstack
   ownerReferences:
   - apiVersion: dataplane.openstack.org/v1beta1
     blockOwnerDeletion: true
     controller: true
     kind: OpenStackDataPlaneDeployment
-    name: edpm-compute-global
+    name: edpm-compute-global-deployment
 spec:
   backoffLimit: 6
   extraMounts:
@@ -470,14 +470,14 @@ status:
 apiVersion: ansibleee.openstack.org/v1beta1
 kind: OpenStackAnsibleEE
 metadata:
-  name: install-certs-edpm-compute-global-edpm-compute-global
+  name: install-certs-edpm-compute-global-deployment-edpm-compute-global
   namespace: openstack
   ownerReferences:
   - apiVersion: dataplane.openstack.org/v1beta1
     blockOwnerDeletion: true
     controller: true
     kind: OpenStackDataPlaneDeployment
-    name: edpm-compute-global
+    name: edpm-compute-global-deployment
 spec:
   backoffLimit: 6
   extraMounts:
@@ -521,14 +521,14 @@ apiVersion: ansibleee.openstack.org/v1beta1
 kind: OpenStackAnsibleEE
 metadata:
   generation: 1
-  name: ovn-edpm-compute-global-edpm-compute-global
+  name: ovn-edpm-compute-global-deployment-edpm-compute-global
   namespace: openstack
   ownerReferences:
   - apiVersion: dataplane.openstack.org/v1beta1
     blockOwnerDeletion: true
     controller: true
     kind: OpenStackDataPlaneDeployment
-    name: edpm-compute-global
+    name: edpm-compute-global-deployment
 spec:
   backoffLimit: 6
   extraMounts:
@@ -583,14 +583,14 @@ apiVersion: ansibleee.openstack.org/v1beta1
 kind: OpenStackAnsibleEE
 metadata:
   generation: 1
-  name: neutron-metadata-edpm-compute-global-edpm-compute-global
+  name: neutron-metadata-edpm-compute-global-deployment-edpm-compute-global
   namespace: openstack
   ownerReferences:
   - apiVersion: dataplane.openstack.org/v1beta1
     blockOwnerDeletion: true
     controller: true
     kind: OpenStackDataPlaneDeployment
-    name: edpm-compute-global
+    name: edpm-compute-global-deployment
 spec:
   backoffLimit: 6
   extraMounts:
@@ -674,14 +674,14 @@ apiVersion: ansibleee.openstack.org/v1beta1
 kind: OpenStackAnsibleEE
 metadata:
   generation: 1
-  name: neutron-ovn-edpm-compute-global-edpm-compute-global
+  name: neutron-ovn-edpm-compute-global-deployment-edpm-compute-global
   namespace: openstack
   ownerReferences:
   - apiVersion: dataplane.openstack.org/v1beta1
     blockOwnerDeletion: true
     controller: true
     kind: OpenStackDataPlaneDeployment
-    name: edpm-compute-global
+    name: edpm-compute-global-deployment
 spec:
   backoffLimit: 6
   extraMounts:
@@ -736,14 +736,14 @@ apiVersion: ansibleee.openstack.org/v1beta1
 kind: OpenStackAnsibleEE
 metadata:
   generation: 1
-  name: neutron-sriov-edpm-compute-global-edpm-compute-global
+  name: neutron-sriov-edpm-compute-global-deployment-edpm-compute-global
   namespace: openstack
   ownerReferences:
   - apiVersion: dataplane.openstack.org/v1beta1
     blockOwnerDeletion: true
     controller: true
     kind: OpenStackDataPlaneDeployment
-    name: edpm-compute-global
+    name: edpm-compute-global-deployment
 spec:
   backoffLimit: 6
   extraMounts:
@@ -798,14 +798,14 @@ apiVersion: ansibleee.openstack.org/v1beta1
 kind: OpenStackAnsibleEE
 metadata:
   generation: 1
-  name: neutron-dhcp-edpm-compute-global-edpm-compute-global
+  name: neutron-dhcp-edpm-compute-global-deployment-edpm-compute-global
   namespace: openstack
   ownerReferences:
   - apiVersion: dataplane.openstack.org/v1beta1
     blockOwnerDeletion: true
     controller: true
     kind: OpenStackDataPlaneDeployment
-    name: edpm-compute-global
+    name: edpm-compute-global-deployment
 spec:
   backoffLimit: 6
   extraMounts:
@@ -859,14 +859,14 @@ status:
 apiVersion: ansibleee.openstack.org/v1beta1
 kind: OpenStackAnsibleEE
 metadata:
-  name: libvirt-edpm-compute-global-edpm-compute-global
+  name: libvirt-edpm-compute-global-deployment-edpm-compute-global
   namespace: openstack
   ownerReferences:
   - apiVersion: dataplane.openstack.org/v1beta1
     blockOwnerDeletion: true
     controller: true
     kind: OpenStackDataPlaneDeployment
-    name: edpm-compute-global
+    name: edpm-compute-global-deployment
 spec:
   backoffLimit: 6
   envConfigMapName: openstack-aee-default-env
@@ -911,7 +911,7 @@ status:
 apiVersion: ansibleee.openstack.org/v1beta1
 kind: OpenStackAnsibleEE
 metadata:
-  name: nova-edpm-compute-global-edpm-compute-global
+  name: nova-edpm-compute-global-deployment-edpm-compute-global
   namespace: openstack
 spec:
   backoffLimit: 6

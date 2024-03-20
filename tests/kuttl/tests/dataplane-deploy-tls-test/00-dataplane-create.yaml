@@ -32,7 +32,7 @@ spec:
 apiVersion: dataplane.openstack.org/v1beta1
 kind: OpenStackDataPlaneService
 metadata:
-  name: install-certs-ovrd
+  name: install-certs-override
 spec:
   addCertMounts: True
   play: |
@@ -91,7 +91,7 @@ spec:
     - name: ANSIBLE_FORCE_COLOR
       value: "True"
   services:
-    - install-certs-ovrd
+    - install-certs-override
     - tls-dnsnames
   preProvisioned: true
   tlsEnabled: true

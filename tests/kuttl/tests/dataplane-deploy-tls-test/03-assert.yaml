@@ -27,7 +27,7 @@ metadata:
   ownerReferences:
   - apiVersion: dataplane.openstack.org/v1beta1
     kind: OpenStackDataPlaneDeployment
-    name: openstack-edpm-tls-ovrd
+    name: openstack-edpm-tls-override
 spec:
   dnsNames:
   - edpm-compute-0.ctlplane.example.com
@@ -69,7 +69,7 @@ metadata:
   ownerReferences:
   - apiVersion: dataplane.openstack.org/v1beta1
     kind: OpenStackDataPlaneDeployment
-    name: openstack-edpm-tls-ovrd
+    name: openstack-edpm-tls-override
 spec:
   issuerRef:
     group: cert-manager.io
@@ -136,14 +136,14 @@ type: Opaque
 apiVersion: ansibleee.openstack.org/v1beta1
 kind: OpenStackAnsibleEE
 metadata:
-  name: install-certs-ovrd-openstack-edpm-tls-ovrd-openstack-edpm-tls
+  name: install-certs-override-openstack-edpm-tls-override-openstack-edpm-tls
   namespace: openstack
   ownerReferences:
   - apiVersion: dataplane.openstack.org/v1beta1
     blockOwnerDeletion: true
     controller: true
     kind: OpenStackDataPlaneDeployment
-    name: openstack-edpm-tls-ovrd
+    name: openstack-edpm-tls-override
 spec:
   backoffLimit: 6
   extraMounts:
@@ -213,12 +213,12 @@ status:
 apiVersion: ansibleee.openstack.org/v1beta1
 kind: OpenStackAnsibleEE
 metadata:
-  name: tls-dns-ips-openstack-edpm-tls-ovrd-openstack-edpm-tls
+  name: tls-dns-ips-openstack-edpm-tls-override-openstack-edpm-tls
   namespace: openstack
   ownerReferences:
   - apiVersion: dataplane.openstack.org/v1beta1
     kind: OpenStackDataPlaneDeployment
-    name: openstack-edpm-tls-ovrd
+    name: openstack-edpm-tls-override
 spec:
   backoffLimit: 6
   extraMounts:
@@ -260,12 +260,12 @@ status:
 apiVersion: ansibleee.openstack.org/v1beta1
 kind: OpenStackAnsibleEE
 metadata:
-  name: custom-tls-dns-openstack-edpm-tls-ovrd-openstack-edpm-tls
+  name: custom-tls-dns-openstack-edpm-tls-override-openstack-edpm-tls
   namespace: openstack
   ownerReferences:
   - apiVersion: dataplane.openstack.org/v1beta1
     kind: OpenStackDataPlaneDeployment
-    name: openstack-edpm-tls-ovrd
+    name: openstack-edpm-tls-override
 spec:
   backoffLimit: 6
   extraMounts:

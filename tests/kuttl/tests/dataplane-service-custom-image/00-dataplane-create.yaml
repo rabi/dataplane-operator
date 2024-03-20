@@ -1,7 +1,7 @@
 apiVersion: dataplane.openstack.org/v1beta1
 kind: OpenStackDataPlaneService
 metadata:
-  name: custom-img-svc
+  name: custom-image-service
 spec:
   openStackAnsibleEERunnerImage: example.com/repo/runner-image:latest
   role:
@@ -16,11 +16,11 @@ spec:
 apiVersion: dataplane.openstack.org/v1beta1
 kind: OpenStackDataPlaneNodeSet
 metadata:
-  name: edpm-no-nodes-custom-svc
+  name: edpm-no-nodes-custom-service
 spec:
   preProvisioned: true
   services:
-    - custom-img-svc
+    - custom-image-service
   nodes: {}
   nodeTemplate:
     ansible:
@@ -31,7 +31,7 @@ spec:
 apiVersion: dataplane.openstack.org/v1beta1
 kind: OpenStackDataPlaneDeployment
 metadata:
-  name: edpm-compute-no-nodes
+  name: edpm-compute-no-nodes-custom-service-deployment
 spec:
   nodeSets:
-    - edpm-no-nodes-custom-svc
+    - edpm-no-nodes-custom-service

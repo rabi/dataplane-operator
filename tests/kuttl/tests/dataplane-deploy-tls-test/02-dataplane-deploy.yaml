@@ -5,4 +5,4 @@ metadata:
   name: openstack-edpm-tls
 spec:
   nodeSets:
-    - openstack-edpm-tls
+    - openstack-edpm-tls-deployment
